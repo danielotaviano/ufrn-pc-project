@@ -1,8 +1,11 @@
 from Core import Core
+from Log import Log
+
 
 core = Core()
 
 try:
   core.start()
 except Exception as e:
-  print(str(e)) 
+  Log.exception(str(e))
+
